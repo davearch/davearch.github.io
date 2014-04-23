@@ -25,14 +25,13 @@ body {
 	background-position: 50% 50%;
 	background-size: cover;
 	padding: 10% 0;
-	
-	h1 {
-		font-size: 1.5rem;
-	}
-	h2 {
-		font-size: 0.75.rem;
-		font-weight: 700;
-	}
+}
+.header-title h1 {
+	font-size: 1.5rem;
+}
+.header-title h2 {
+	font-size: 0.75.rem;
+	font-weight: 700;
 }
 
 .header-title-avatar {
@@ -55,9 +54,9 @@ body {
 	rgba(211, 131, 18, 0.85), 
 	rgba(168, 50, 121, 0.85)),
 	url(../images/me.jpg);
+}
 	
-	.header-title-avatar {
-		background-image: url(../images/me.jpg);
-	}
+.header-title-avatar {
+	background-image: url(../images/me.jpg);
 }
 
