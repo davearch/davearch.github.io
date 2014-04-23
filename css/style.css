@@ -51,8 +51,10 @@ body {
 
 /* Theme */
 .header-title-style-1 {
-	background-image: linear-gradient(to bottom right,
-	rgba(211, 131, 18, 0.85), rgba(168, 50, 121, 0.85)),
+	background-image: 
+	linear-gradient(to bottom right, 
+	rgba(211, 131, 18, 0.85), 
+	rgba(168, 50, 121, 0.85)),
 	url(images/me.jpg);
 	
 	.header-title-avatar {
