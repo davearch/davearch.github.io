@@ -360,13 +360,10 @@ p[data-value]:after {
 /* Contact Links */
 
 .social {
-	margin:8em auto;
-	padding: 0;
-	width: 25%;
+	text-align: right;
 }
-.social {
-	list-style: none;
-	display: inline-block;
+.social li {
+	padding-right: 10%;
 }
 a.social-icon {
 	list-style: none;
