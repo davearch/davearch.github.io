@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* Fonts */
+/* Font */
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em;
@@ -17,7 +17,7 @@ body {
 	box-sizing: border-box; 		/* Opera/IE 8+ */
 }
 
-/* Styling */
+/* Header */
 .header-title {
 	color: white;
 	text-align: center;
@@ -46,8 +46,6 @@ body {
 	display: inline-block;
 	padding: 0.3em 1em 0.5em 1em;
 }
-
-/* Theme */
 .header-title-style-1 {
 	background-image: 
 	linear-gradient(to bottom right, 
@@ -60,3 +58,110 @@ body {
 	background-image: url(../images/me.jpg);
 }
 
+/* Main Content */
+
+*:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.skills-segment {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-size: 16px;
+	line-height:1.5;
+	color: rgb(85, 85, 85);
+	text-align: center;
+	background-color: rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(229, 229, 229);
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(229, 229, 229);
+}
+
+.container:after, .row:after {
+	clear: both;
+}
+.container:before, .container:after, .row:before, .row:after{
+	content: " ";
+	display: table;
+}
+
+.container {
+	width: 1170px;
+	
+	margin-right: auto;
+	margin-right-value: auto;
+	margin-right-ltr-source: physical;
+	margin-right-rtl-source: physical;
+	
+	margin-left: auto;
+	margin-left-value: auto;
+	margin-left-ltr-source: physical;
+	margin-left-rtl-source: physical;
+	
+	padding-left: 15px;
+	padding-left-value: 15px;
+	padding-left-ltr-source: physical;
+	padding-left-rtl-source: physical;
+	
+	padding-right: 15px;
+	padding-right-value: 15px;
+	padding-right-ltr-source: physical;
+	padding-right-rtl-source: physical;
+}
+
+.segment-title {
+	font-size: 40px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+	margin-bottom: 5px;
+}
+.segment-title h2 {
+	margin-top: 20px;
+	font-family: inherit;
+	line-height: 1.1;
+}
+
+.lead {
+	margin-right: auto;
+	margin-right-value: auto;
+	margin-right-ltr-source: physical;
+	margin-right-rtl-source: physical;
+	
+	margin-left: auto;
+	margin-left-value: auto;
+	margin-left-ltr-source: physical;
+	margin-left-rtl-source: physical;
+	
+	max-width: 80%;
+	font-size: 21px;
+	margin-bottom: 20px;
+	font-weight: 200;
+	line-height: 1.4;
+}
+
+.half-rule {
+	width: 100px;
+	margin: 40px auto;
+	margin-top: 40px;
+	margin-right-value: auto;
+	margin-bottom: 40px;
+	margin-left-value: auto;
+	margin-left-ltr-source: physical;
+	margin-left-rtl-source: physical;
+	margin-right-ltr-source: physical;
+	margin-right-rtl-source: physical;
+	
+	border-width: 1px 0px 0px;
+	border-style: solid none none;
+	border-color: 
+	  rgb(238, 238, 238)
+	  -moz-use-text-color
+	  -moz-use-text-color;
+	border-image: none;
+	-moz-box-sizing: content-box;
+	height: 0px;
+}
+	
