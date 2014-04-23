@@ -166,7 +166,7 @@ body {
 }
 
 .third {
-	background: rgb(153, 255, 255);
+	background: rgba(102, 245, 201, 0.85);
 }
 .third p {
 	font-weight:bold;
