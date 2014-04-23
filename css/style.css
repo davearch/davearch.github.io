@@ -301,7 +301,7 @@ p[data-value]:after {
 	-webkit-linear-gradient( left, #09c, #690);
 }
 .html5::-moz-progress-bar,
-.java::-mox-progress-bar {
+.java::-moz-progress-bar {
 	background-image:
 	-moz-linear-gradient( 135deg,
 							transparent,
