@@ -1,9 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-$color-1: black;
-$color-2: white;
-
 /* Fonts */
 body {
 	font-family: Helvetica, Arial, sans-serif;
@@ -22,7 +19,7 @@ body {
 
 /* Styling */
 .header-title {
-	color: $color-2;
+	color: white;
 	text-align: center;
 	
 	background-position: 50% 50%;
@@ -46,7 +43,7 @@ body {
 	height: 6rem;
 }
 .header-title-hgroup {
-	border: 1px solid $color-2;
+	border: 1px solid white;
 	display: inline-block;
 	padding: 0.3em 1em 0.5em 1em;
 }
