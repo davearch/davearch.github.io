@@ -55,10 +55,10 @@ body {
 	linear-gradient(to bottom right, 
 	rgba(211, 131, 18, 0.85), 
 	rgba(168, 50, 121, 0.85)),
-	url(images/me.jpg);
+	url(../images/me.jpg);
 	
 	.header-title-avatar {
-		background-image: url(images/me.jpg);
+		background-image: url(../images/me.jpg);
 	}
 }
 
