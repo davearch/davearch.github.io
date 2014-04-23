@@ -359,6 +359,10 @@ p[data-value]:after {
 
 /* Contact Links */
 
+.social {
+	list-style: none;
+	display: inline-block;
+}
 a.social-icon {
 	list-style: none;
 	background-image: url(../images/social-icons.png);
