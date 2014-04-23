@@ -396,8 +396,11 @@ a.social-icon.email:hover 		{ background-position: -280px -32px; }
 a.social-icon.youtube:hover 	{ background-position: -373px -32px; }
 a.social-icon.blog:hover		{ background-position: -404px -32px; }
 
-
-
+/* Links */
+a:link 		{ color: rgb(255, 255, 255); }
+a:visited 	{ color: rgb(255, 255, 255); }
+a:hover 	{ color: rgb(255, 255, 255); }
+a:active 	{color: rgb(255, 255, 255); }
 
 
 
