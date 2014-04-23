@@ -165,8 +165,11 @@ body {
 	height: 0px;
 }
 
+.second {
+	rgba(102, 245, 201, 0.85);
+}
 .third {
-	background: rgba(102, 245, 201, 0.85);
+	rgba(41, 36, 132, 0.85);
 }
 .third p {
 	font-weight:bold;
