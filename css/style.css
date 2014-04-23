@@ -165,9 +165,11 @@ body {
 	height: 0px;
 }
 
+.third {
+	background: rgb(102, 153, 153);
+}
 .third p {
 	font-weight:bold;
-	float:left;
 }
 
 /* Progress Bar Segment */
