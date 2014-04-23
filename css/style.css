@@ -170,7 +170,10 @@ body {
 }
 .third {
 	background: rgba(41, 36, 132, 0.85);
-	color: rgb( 255, 255, 255 ) !important;
+	color: rgb( 255, 255, 255 );
+}
+.third h2 {
+	color: rgb( 255, 255, 255 );
 }
 .third p {
 	font-weight:bold;
