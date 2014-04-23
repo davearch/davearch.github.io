@@ -361,8 +361,8 @@ p[data-value]:after {
 
 
 .social li {
-	padding-right: 10%;
 	text-align: right;
+	width: 20%;
 }
 a.social-icon {
 	list-style: none;
