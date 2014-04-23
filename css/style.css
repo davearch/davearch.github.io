@@ -359,11 +359,10 @@ p[data-value]:after {
 
 /* Contact Links */
 
-.social {
-	text-align: right;
-}
+
 .social li {
 	padding-right: 10%;
+	text-align: right;
 }
 a.social-icon {
 	list-style: none;
