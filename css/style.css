@@ -356,3 +356,44 @@ p[data-value]:after {
 							rgba( 0, 0, 0, .2)),
 	-moz-linear-gradient( left, #09c, #690);
 }
+
+/* Contact Links */
+
+a.social-icon {
+	list-style: none;
+	background-image: url(../images/social-icons.png);
+	background-color: #F3F4F5;
+	height: 29px;
+	float: left;
+	width: 29px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	-webkit-transition: all 0.15s ease;
+	   -moz-transition: all 0.15s ease;
+	        transition: all 0.15s ease;
+}
+a.social-icon.twitter 		{ background-position: -1px -1px;   }
+a.social-icon.facebook 		{ background-position: -32px -1px;  }
+a.social-icon.googleplus 	{ background-position: -125px -1px; }
+a.social-icon.github 		{ background-position: -156px -1px; }	
+a.social-icon.linkedin 		{ background-position: -249px -1px; }
+a.social-icon.email 		{ background-position: -280px -1px; }
+a.social-icon.youtube 		{ background-position: -373px -1px; }
+
+a.social-icon.twitter:hover 	{ background-position: -1px -32px;   }
+a.social-icon.facebook:hover 	{ background-position: -32px -32px;  }
+a.social-icon.googleplus:hover 	{ background-position: -125px -32px; }
+a.social-icon.github:hover 		{ background-position: -156px -32px; }	
+a.social-icon.linkedin:hover 	{ background-position: -249px -32px; }
+a.social-icon.email:hover 		{ background-position: -280px -32px; }
+a.social-icon.youtube:hover 	{ background-position: -373px -32px; }
+
+
+
+
+
+
+
+
+
