@@ -400,7 +400,9 @@ a.social-icon.blog:hover		{ background-position: -404px -32px; }
 a:link 		{ color: rgb(255, 255, 255); }
 a:visited 	{ color: rgb(255, 255, 255); }
 a:hover 	{ color: rgb(255, 255, 255); }
-a:active 	{color: rgb(255, 255, 255); }
+a:active 	{ color: rgb(255, 255, 255); }
+.second a:link { color: rgb(0, 0, 0); }
+.third a:hover { color: rgb(0, 0, 0); }
 
 
 
