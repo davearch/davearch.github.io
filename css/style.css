@@ -360,6 +360,11 @@ p[data-value]:after {
 /* Contact Links */
 
 .social {
+	margin:8em auto;
+	padding: 0;
+	width: 25%;
+}
+.social {
 	list-style: none;
 	display: inline-block;
 }
