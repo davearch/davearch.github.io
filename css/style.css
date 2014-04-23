@@ -357,7 +357,7 @@ p[data-value]:after {
 	-moz-linear-gradient( left, #09c, #690);
 }
 
-/* Contact Links */
+/* Contact/Social Media Links */
 
 
 .social li {
@@ -385,6 +385,7 @@ a.social-icon.github 		{ background-position: -156px -1px; }
 a.social-icon.linkedin 		{ background-position: -249px -1px; }
 a.social-icon.email 		{ background-position: -280px -1px; }
 a.social-icon.youtube 		{ background-position: -373px -1px; }
+a.social-icon.blog			{ background-position: -404px -1px; }
 
 a.social-icon.twitter:hover 	{ background-position: -1px -32px;   }
 a.social-icon.facebook:hover 	{ background-position: -32px -32px;  }
@@ -393,6 +394,7 @@ a.social-icon.github:hover 		{ background-position: -156px -32px; }
 a.social-icon.linkedin:hover 	{ background-position: -249px -32px; }
 a.social-icon.email:hover 		{ background-position: -280px -32px; }
 a.social-icon.youtube:hover 	{ background-position: -373px -32px; }
+a.social-icon.blog				{ background-position: -404px -1px; }
 
 
 
