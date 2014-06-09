@@ -3,44 +3,25 @@
 
 jQuery(document).ready(function($) {
    'use strict';
-
 	// var windowHeight = $(window).height();
 	// var windowWidth = $(window).width();
 
-	// Nav
-	/*
-	$('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 500);
-	        return false;
-	      }
-	    }
-	});
-	*/
-	// automatically scrolls to section of page upon click event.
-	$(document).ready(function() {
-		$("a[href*=#]:not([href=#])").on("click", function(event){
-			$("html, body").animate({
-				scrollTop: $($(this).attr("href")).offset().top + "px"
-			}, {
-				duration: 500,
-				easing: "swing"
-			});
-			return false;
+	// menu links automatically scroll to section of page upon click event.
+	$("a[href*=#]:not([href=#])").on("click", function(event){
+		$("html, body").animate({
+			scrollTop: $($(this).attr("href")).offset().top + "px"
+		}, {
+			duration: 500,
+			easing: "swing"
 		});
+		return false;
 	});
-	// It works!!!
 	
 	// show hidden menu, change menu icon upon click and vice versa
     $(".menu-icon").click(function(e) {
-    	if ($('.menu').hasClass("visuallyhidden")) {
+    	if ($('.menu').hasClass("visuallyhidden")) { 		// main.css line 238
 			$('.menu').removeClass("visuallyhidden");
-			$('.menu-icon').addClass("close");
+			$('.menu-icon').addClass("close");	// main.css line 338-385
 		} else {
 			$('.menu').addClass("visuallyhidden");
 			$('.menu-icon').removeClass("close");
@@ -57,7 +38,17 @@ jQuery(document).ready(function($) {
 			$('.menu-icon').removeClass("close");
 		}
     });
-	// Nav
+
+	$(".menu-icon").hover(
+		function() {
+			$(this).children("span").removeClass("background");
+			$(this).children("span").addClass("dark-background");
+		}, function() {
+			$(this).children("span").removeClass("dark-background");
+			$(this).children("span").addClass("background");
+		}
+	);
+   	// Nav
 
 	// Shows the overlay for the 'my works' section upon hover
 	$(".work-item").hover(function(e){

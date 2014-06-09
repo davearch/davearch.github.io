@@ -73,7 +73,7 @@ hr {
     margin: 0 auto;
     padding: 0;
     max-width: 27px;
-    background-color: #00FFFF; /* Primary Light Blue */
+    background-color: #FF5E00; /* Burnt Orange */
 }
 
 img {
@@ -167,6 +167,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 55px;
     background-color: #00FFFF; /* Primary */
 
+    /* i hate this
     -webkit-border-radius: 45px;
        -moz-border-radius: 45px;
             border-radius: 45px;
@@ -174,6 +175,7 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-background-clip: padding-box;
        -moz-background-clip: padding-box;
             background-clip: padding-box;
+    */
 
     color: #000; /* modification */
     border: 0;
@@ -210,8 +212,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .but:hover,
 .but:active {
-    background-color: #05A6A6; /* darker blue */
+    	background-color: #05A6A6; /* darker blue */
 	color: #fff; /* modification */
+	box-shadow:inset -10px 0 10px rgba(0,0,0,.5);
 }
 
 /* ==========================================================================
@@ -222,7 +225,7 @@ h1, h2, h3, h4, h5, h6, p {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    /*width: 100%;*/	/* modification */
     height: 100%;
     z-index: 8999;
     background: rgba(255, 94, 0, 0.8); /* orange */
@@ -233,9 +236,16 @@ h1, h2, h3, h4, h5, h6, p {
        -moz-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
          -o-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
             transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
+
+    /* modifications -------------------------------------> */
+    -webkit-box-shadow:inset -10px 0 20px rgba(0,0,0,.5);
+       -moz-box-shadow:inset -10px 0 20px rgba(0,0,0,.5);
+         -o-box-shadow:inset -10px 0 20px rgba(0,0,0,.5);
+	    box-shadow:inset -10px 0 20px rgba(0,0,0,.5);	
+    /* <--------------------------------------------------- */
 }
 
-.menu.visuallyhidden {
+.menu.visuallyhidden { /* see main.js line 39 */
     opacity: 0;
     visibility: hidden;
 }
@@ -256,17 +266,21 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding: 18px 0 18px 45px;
+    padding: 18px 18px 18px 25px;
 
     -webkit-transition: background 0.2s ease, color 0.2s ease;
        -moz-transition: background 0.2s ease, color 0.2s ease;
          -o-transition: background 0.2s ease, color 0.2s ease;
             transition: background 0.2s ease, color 0.2s ease;
+						
+    border-bottom: 1px solid rgba(0, 0, 0, .2);		/* modification */
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);	/* modification */
 }
 
 .menu ul li a:hover {
     color: #00FFFF; /* primary blue */
     background-color: #fff;
+    box-shadow:inset -10px 5px 20px rgba(0, 0, 0, .5); /* mod */
 }
 
 .menu-icon {
@@ -275,7 +289,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: inline-block;
     position: fixed;
     top: 45px;
-    left: 45px;
+    left: 25px;
     cursor: pointer;
     z-index: 9999;
 
@@ -294,13 +308,41 @@ h1, h2, h3, h4, h5, h6, p {
     height: 2px;
     position: relative;
     display: inline-block;
-    background: #00FFFF; /* blue */  
+    /*background: #00FFFF; /* blue */  
 
     -webkit-transition: background 0.4s ease-out;
        -moz-transition: background 0.4s ease-out;
          -o-transition: background 0.4s ease-out;
             transition: background 0.4s ease-out; 
 }
+
+/* background on hover ----> modification */
+.background {
+	background: #00FFFF; /* blue */
+}
+.dark-background {
+	background: #05A6A6; /* darker blue */
+	-webkit-transition: background 0.4s ease-out !important;
+           -moz-transition: background 0.4s ease-out !important;
+             -o-transition: background 0.4s ease-out !important;
+                transition: background 0.4s ease-out !important; 
+}
+span.dark-background::after {
+	background: #05A6A6 !important;
+	-webkit-transition: background 0.4s ease-out !important;
+           -moz-transition: background 0.4s ease-out !important;
+             -o-transition: background 0.4s ease-out !important;
+                transition: background 0.4s ease-out !important; 
+}
+span.dark-background::before {
+	background: #05A6A6 !important;
+	-webkit-transition: background 0.4s ease-out !important;
+           -moz-transition: background 0.4s ease-out !important;
+             -o-transition: background 0.4s ease-out !important;
+                transition: background 0.4s ease-out !important; 
+}
+/*
+************************************/
 
 .menu-icon span:before {
     top: 9px;
@@ -334,6 +376,8 @@ h1, h2, h3, h4, h5, h6, p {
 .menu-icon span:after {
     top: -9px;
 }
+
+/* .close class --------------------------------> */
 
 .menu-icon.close span {
     -webkit-transition: background 0.2s ease-out;
@@ -380,6 +424,8 @@ h1, h2, h3, h4, h5, h6, p {
          -o-transform: rotate3d(0, 0, 1, -45deg);
             transform: rotate3d(0, 0, 1, -45deg);
 }
+
+/* End of .close class styles <------------------ */
 
 .menu-icon p {
     font-size: 1rem;
@@ -448,6 +494,11 @@ h1, h2, h3, h4, h5, h6, p {
    Home
    ========================================================================== */
 
+.logo {
+	width:350px;
+	height:200px;
+}
+
 #home {
     background-color: #000;
     /*background-image: url(../img/bg/trip.jpg);*/
@@ -473,7 +524,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 4rem;
     font-size: 64px;
     font-weight: 700;
-    color: #fff;
+    color: #FF5E00; /* burnt orange */
     letter-spacing: 3px;
     margin-bottom: 9px;
     opacity: 1;
@@ -521,9 +572,21 @@ h1, h2, h3, h4, h5, h6, p {
     padding-bottom: 90px;
     background-color: #fff;
 }
-
+.about-content h3 {
+	margin-top: 30px;
+}
 .about-content a {
     margin-top: 90px;
+}
+.pic {
+    border-radius: 50%;
+    width:260px;
+    height: 260px;
+    margin-bottom: 0px;
+    background-image: url('../images/me.jpg');
+    background-size: cover;
+    box-sizing: padding-box;
+    margin: 0 auto;
 }
 
 /* ==========================================================================
@@ -632,6 +695,23 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 18px;
 }*/
 
+.square {
+	border: 1px solid #00FFFF;
+	height: 188px;
+	margin: 1px;
+	overflow: hidden;
+	font-style: normal;
+	float: left;
+	-webkit-transition: color 0.3s ease;
+           -moz-transition: color 0.3s ease;
+             -o-transition: color 0.3s ease;
+                transition: color 0.3s ease;
+	width:24% !important;
+	
+}
+
+
+
 .social [class^="icon-"],
 .social [class*=" icon-"] {
     font-family: 'icon';
@@ -642,11 +722,12 @@ h1, h2, h3, h4, h5, h6, p {
     text-transform: none;
     font-size: 1.6875rem;
     font-size: 27px;
-    line-height: 1rem;
-    line-height: 16px;
+    line-height: 188px;
     color: #00FFFF; /* blue */
-    padding: 6px;
-    margin: 0 27px;
+    padding: 0px;
+    margin: 0px;
+    display:block;
+
 
     -webkit-transition: color 0.3s ease;
        -moz-transition: color 0.3s ease;
@@ -659,7 +740,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .social [class^="icon-"]:hover,
 .social [class*=" icon-"]:hover {
-    color: #05A6A6; /* darker blue */
+	color: #FFF;
+    	background-color: #05A6A6; /* darker blue */
+	box-shadow: inset -10px 0 20px rgba(0,0,0,.5);
+
 }
 
 .social {
@@ -809,7 +893,7 @@ h1, h2, h3, h4, h5, h6, p {
 
         .social [class^="icon-"],
         .social [class*=" icon-"] {
-            margin: 0 3px;
+            margin: 0px;
         }    
         
         .span_1 {
@@ -861,6 +945,10 @@ h1, h2, h3, h4, h5, h6, p {
             margin-left:0;
             width:100%;
         }
+	.logo {
+		width: 80px;
+		height: 40px;
+	}
     }
 
     /* 2. 12 Column Grid 320px - 459px 
@@ -952,7 +1040,7 @@ h1, h2, h3, h4, h5, h6, p {
 
         .social [class^="icon-"],
         .social [class*=" icon-"] {
-            margin: 0 3px;
+            margin: 0px;
         }
         
         .span_1 {
@@ -1004,6 +1092,10 @@ h1, h2, h3, h4, h5, h6, p {
             margin-left:0;
             width:100%;
         }
+	.logo{
+		width:100px;
+		height:50px;
+	}
     }
 
     /* 3. 12 Column Grid 460px - 779px 
@@ -1129,6 +1221,10 @@ h1, h2, h3, h4, h5, h6, p {
             margin-left:0;
             width:100%;
         }
+	.logo{
+		width: 140px;
+		height: 70px;
+	}
     }
 
     /* 4. 12 Column Grid 780px - 1199px 
@@ -1214,6 +1310,10 @@ h1, h2, h3, h4, h5, h6, p {
             margin-left:0;
             width:100%;
         }
+	.logo {
+		width: 240px;
+		height: 120px;
+	}
     }
 
     /* 5. 12 Column Grid 1200px - Infinity 
