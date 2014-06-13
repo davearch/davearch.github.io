@@ -3,9 +3,6 @@
 
 jQuery(document).ready(function($) {
    'use strict';
-	// var windowHeight = $(window).height();
-	// var windowWidth = $(window).width();
-
 	// menu links automatically scroll to section of page upon click event.
 	$("a[href*=#]:not([href=#])").on("click", function(event){
 		$("html, body").animate({
@@ -18,27 +15,28 @@ jQuery(document).ready(function($) {
 	});
 	
 	// show hidden menu, change menu icon upon click and vice versa
-    $(".menu-icon").click(function(e) {
-    	if ($('.menu').hasClass("visuallyhidden")) { 		// main.css line 238
+        $(".menu-icon").click(function(e) {
+    		if ($('.menu').hasClass("visuallyhidden")) { 		// main.css line 238
 			$('.menu').removeClass("visuallyhidden");
-			$('.menu-icon').addClass("close");	// main.css line 338-385
+			$('.menu-icon').addClass("close");		// main.css line 338-385
 		} else {
 			$('.menu').addClass("visuallyhidden");
 			$('.menu-icon').removeClass("close");
 		}
-    });
+    	});
 	
 	// dynamically show and hide menu && change menu icon upon clicking link
-    $(".menu li a").click(function(e) {
-    	if ($('.menu').hasClass("visuallyhidden")) {
+    	$(".menu li a").click(function(e) {
+    		if ($('.menu').hasClass("visuallyhidden")) {
 			$('.menu').removeClass("visuallyhidden");
 			$('.menu-icon').addClass("close");
 		} else {
 			$('.menu').addClass("visuallyhidden");
 			$('.menu-icon').removeClass("close");
 		}
-    });
+    	});
 
+	// Hovering over the menu icon changes it's color darker or lighter
 	$(".menu-icon").hover(
 		function() {
 			$(this).children("span").removeClass("background");
@@ -48,7 +46,6 @@ jQuery(document).ready(function($) {
 			$(this).children("span").addClass("background");
 		}
 	);
-   	// Nav
 
 	// Shows the overlay for the 'my works' section upon hover
 	$(".work-item").hover(function(e){
@@ -57,18 +54,16 @@ jQuery(document).ready(function($) {
 		$(this).children('.work-item-inside').removeClass("visuallyshowed");
 	});
 
-	// Skrollr Â· Mobile NONE
+	// Skrollr Mobile NONE
 	if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
 		// only animate when scrolling down
-	    skrollr.init({
+	    	skrollr.init({
 			beforerender: function(data) {
 				return data.curTop > data.lastTop;
 			}        
         	
-	    });
+	    	});
 	}
-	// Skrollr
-
 });
 
 // match css sizes (width, height) with viewport upon page load
@@ -85,8 +80,6 @@ $(window).load(function() {
 // match css sizes with viewport upon change of viewport size
 $(window).resize(function() {
 	fixSizes();
-	// ignore.. this is a test
-	//$( "body" ).prepend( "<div>" + $( window ).width() + "</div>");
 });
 
 function fixSizes() {

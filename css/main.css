@@ -11,19 +11,31 @@
  
 /* TOC
  * ******************
+ * Colors
  * General
  * Buttons
+ * Header
+ * All Sections
  * Home
- * /
- /* Colors
- ======================
- #000 Black
- #FFF White
- #00FFFF, rgb(0, 255, 255) 	Light Blue		(Primary)	
+ * About
+ * Skills
+ * Work
+ * Contact
+ * Footer
+ * Media Queries
+ * ******************/
+
+/* ======================
+   Colors
+   ======================
+ #000 				       Black
+ #FFF 				       White
+ #00FFFF, rgb(0, 255, 255) 	  Light Blue	(Primary)	
  #FF5E00, rgb(255, 94, 0) 	Burnt Orange	(complementary)
- #FF19C2, rgb(255, 25, 294) Pinkish Purple? (Triad)
- #646473, rgb(100, 100, 115)Greyish Color	(text color)
- #05A6A6, rgb(5, 166, 166) darker blue
+ #FF19C2, rgb(255, 25, 294)   Pinkish Purple 	(Triad)
+ #646473, rgb(100, 100, 115)   Greyish Color	(text color)
+ #05A6A6, rgb(5, 166, 166)       darker blue
+
   
 /* ==========================================================================
    General
@@ -135,25 +147,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* ==========================================================================
-   One Page Love
-   ==========================================================================
-
-.opl {
-    position: fixed;
-    top: 35px;
-    right: 0px;
-    z-index: 9999;
-}
-
-.opl a {
-    width: 73px;
-    height: 56px;
-    text-indent: -9999px;
-    display: block;
-    background: url(../img/opl.png) no-repeat;
-}
-
-/* ==========================================================================
    Buttons
    ========================================================================== */
 
@@ -167,17 +160,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 55px;
     background-color: #00FFFF; /* Primary */
 
-    /* i hate this
-    -webkit-border-radius: 45px;
-       -moz-border-radius: 45px;
-            border-radius: 45px;
-
-    -webkit-background-clip: padding-box;
-       -moz-background-clip: padding-box;
-            background-clip: padding-box;
-    */
-
-    color: #000; /* modification */
+    color: #000;
     border: 0;
 
     -webkit-transition: background-color 0.3s ease;
@@ -213,7 +196,7 @@ h1, h2, h3, h4, h5, h6, p {
 .but:hover,
 .but:active {
     	background-color: #05A6A6; /* darker blue */
-	color: #fff; /* modification */
+	color: #fff;
 	box-shadow:inset -10px 0 10px rgba(0,0,0,.5);
 }
 
@@ -224,8 +207,7 @@ h1, h2, h3, h4, h5, h6, p {
 .menu {
     position: fixed;
     top: 0;
-    left: 0;
-    /*width: 100%;*/	/* modification */
+    left: 0;	
     height: 100%;
     z-index: 8999;
     background: rgba(255, 94, 0, 0.8); /* orange */
@@ -237,12 +219,10 @@ h1, h2, h3, h4, h5, h6, p {
          -o-transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
             transition: opacity 0.3s ease-out, visibility 0.2s ease-out;
 
-    /* modifications -------------------------------------> */
     -webkit-box-shadow:inset -10px 0 20px rgba(0,0,0,.5);
        -moz-box-shadow:inset -10px 0 20px rgba(0,0,0,.5);
          -o-box-shadow:inset -10px 0 20px rgba(0,0,0,.5);
 	    box-shadow:inset -10px 0 20px rgba(0,0,0,.5);	
-    /* <--------------------------------------------------- */
 }
 
 .menu.visuallyhidden { /* see main.js line 39 */
@@ -252,7 +232,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .menu ul {
     width: 100%;
-    /*height: 100%;*/
     text-align: left;
     padding-top: 130px;
 }
@@ -273,14 +252,14 @@ h1, h2, h3, h4, h5, h6, p {
          -o-transition: background 0.2s ease, color 0.2s ease;
             transition: background 0.2s ease, color 0.2s ease;
 						
-    border-bottom: 1px solid rgba(0, 0, 0, .2);		/* modification */
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);	/* modification */
+    border-bottom: 1px solid rgba(0, 0, 0, .2);		
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);	
 }
 
 .menu ul li a:hover {
     color: #00FFFF; /* primary blue */
     background-color: #fff;
-    box-shadow:inset -10px 5px 20px rgba(0, 0, 0, .5); /* mod */
+    box-shadow:inset -10px 5px 20px rgba(0, 0, 0, .5); 
 }
 
 .menu-icon {
@@ -307,8 +286,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 41px;
     height: 2px;
     position: relative;
-    display: inline-block;
-    /*background: #00FFFF; /* blue */  
+    display: inline-block; 
 
     -webkit-transition: background 0.4s ease-out;
        -moz-transition: background 0.4s ease-out;
@@ -316,7 +294,6 @@ h1, h2, h3, h4, h5, h6, p {
             transition: background 0.4s ease-out; 
 }
 
-/* background on hover ----> modification */
 .background {
 	background: #00FFFF; /* blue */
 }
@@ -341,8 +318,6 @@ span.dark-background::before {
              -o-transition: background 0.4s ease-out !important;
                 transition: background 0.4s ease-out !important; 
 }
-/*
-************************************/
 
 .menu-icon span:before {
     top: 9px;
@@ -436,20 +411,6 @@ span.dark-background::before {
     color: #00FFFF; /* blue */
 }
 
-/*.menu-icon p:before {
-    content: 'Menu';
-    opacity: 1;
-    -webkit-transition: opacity 0.2s ease-out;
-       -moz-transition: opacity 0.2s ease-out;
-         -o-transition: opacity 0.2s ease-out;
-            transition: opacity 0.2s ease-out;    
-}
-
-.menu-icon.close p:before {
-    content: 'Menu';
-    opacity: 0;
-}*/
-
 /* ==========================================================================
    All Sections
    ========================================================================== */
@@ -501,7 +462,6 @@ span.dark-background::before {
 
 #home {
     background-color: #000;
-    /*background-image: url(../img/bg/trip.jpg);*/
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -516,7 +476,6 @@ span.dark-background::before {
     left: 0px;
     right: 0px;
     top: 0px;
-    /*background-color: rgba(0, 0, 0, 0.6);*/
 }
 
 .home-title h1 {
@@ -590,7 +549,7 @@ span.dark-background::before {
 }
 
 /* ==========================================================================
-   Services
+   Skills
    ========================================================================== */
 
 #services {
@@ -686,14 +645,6 @@ span.dark-background::before {
 /* ==========================================================================
    Contact
    ========================================================================== */
-
-/*.social [class^="icon-"],
-.social [class*=" icon-"] {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    margin: 0 18px;
-}*/
 
 .square {
 	border: 1px solid #00FFFF;
@@ -870,7 +821,7 @@ span.dark-background::before {
         .about-title h3,
         .work-title h3,
         .contact-title h3,
-		.skills-title h3, /* modification */
+		.skills-title h3,
         .menu ul li a {
             font-size: 1.3125rem;
             font-size: 21px;
@@ -1017,7 +968,7 @@ span.dark-background::before {
         .about-title h3,
         .work-title h3,
         .contact-title h3,
-		.services-title h3, /* modification */
+		.services-title h3,
         .menu ul li a {
             font-size: 1.3125rem;
             font-size: 21px;
@@ -1145,7 +1096,7 @@ span.dark-background::before {
         .about-title h3,
         .work-title h3,
         .contact-title h3,
-		.services-title h3, /* modification */
+		.services-title h3, 
         .menu ul li a {
             font-size: 1.3125rem;
             font-size: 21px;
