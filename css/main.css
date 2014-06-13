@@ -596,7 +596,7 @@ span.dark-background::before {
 }
 
 .work-item {
-    max-height: 250px;
+    max-height: 230px;
     cursor: pointer;
     margin-bottom: 24px;
     position: relative;
