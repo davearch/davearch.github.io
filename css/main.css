@@ -740,6 +740,11 @@ span.dark-background::before {
     font-weight: 400;
 }
 
+#footer img {
+	display: inline;
+	height:13px;
+}
+
 #footer a {
     color: #00FFFF; /* blue */
     -webkit-transition: color 0.3s ease;
