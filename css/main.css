@@ -743,6 +743,7 @@ span.dark-background::before {
 #footer img {
 	display: inline;
 	height:13px;
+	padding: 5px;
 }
 
 #footer a {
