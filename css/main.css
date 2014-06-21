@@ -732,7 +732,8 @@ span.dark-background::before {
 }
 
 .f1 {
-    text-align: center;
+    /* text-align: center; */
+    text-align: left;
 }
 
 #footer p {
