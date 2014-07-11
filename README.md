@@ -5,3 +5,5 @@ Please contact me:
 Email: davearch@email.arizona.edu
 
 Twitter: @darchuletajr
+
+IG: darchuletajr
